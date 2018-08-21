@@ -1,0 +1,14 @@
+
+<h1> Acidgreen Knockout (<span data-bind="text: cartData().summary_count"></span>) <button data-bind="click: toggle()">-</button> </h1>
+<div class="content" data-bind="css: {enabled: toggleState()}">
+    <ul data-bind="foreach: cartData().items">
+        <li>
+            <div><img data-bind="attr: product_image" /></div>
+            <div><span data-bind="text: product_name"></span> &nbsp; <span data-bind="text: '(' + qty + ')'"></span></div>
+            
+        </li>
+    </ul>
+    <!-- ko if: cartData().items.length == 0 -->
+        <h3>No items to show</h3>
+    <!-- /ko -->
+</div>

@@ -1,0 +1,19 @@
+<div data-role="ag-knockout" 
+      data-bind="scope: 'AgKnockout'" 
+	class="ag-knockout">
+	<!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+	{
+		"[data-role=ag-knockout]": {
+			"Magento_Ui/js/core/app": {
+				"components": {
+					"AgKnockout": {
+						"component": "Acidgreen_Knockout/js/main",
+						"template": "Acidgreen_Knockout/main"
+					}
+				}
+			}
+		}		
+	}
+</script>

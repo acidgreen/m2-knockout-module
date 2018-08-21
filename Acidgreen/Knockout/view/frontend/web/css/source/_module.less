@@ -1,0 +1,50 @@
+.ag-knockout {
+    position: fixed;
+    padding: 20px;
+    border: 1px solid #000;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    z-index: 2000;
+    width: 500px;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+
+        button {
+            float: right;
+        }
+    }
+    .content {
+        padding: 15px;
+        display: none;
+
+        &.enabled {
+            display: block;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            max-height: 480px;
+
+            li {
+                padding: 5px 10px;
+                border: 1px solid #000;
+                border-radius: 10px;
+                min-height: 100px;
+                margin: 0 0 15px 15px;
+                order: 1;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #666;
+                }
+            }
+        }
+    }
+}
